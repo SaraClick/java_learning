@@ -24,16 +24,22 @@ public class Runner {
         operator = scan.next();
 
 
-        if (operator.equals("+")) {
-            System.out.println(num1 + num2);
-        } else if (operator.equals("-")) {
-            System.out.println(num1 - num2);
-        } else if (operator.equals("*")) {
-            System.out.println(num1 * num2);
-        } else if (operator.equals("/")) {
-            System.out.println(num1 / num2);
-        } else {
-            System.out.println("Incorrect input");
+        switch (operator) {
+            case "+":
+                System.out.println(num1 + num2);
+                break;
+            case "-":
+                System.out.println(num1 - num2);
+                break;
+            case "*":
+                System.out.println(num1 * num2);
+                break;
+            case "/":
+                System.out.println(num1 / num2);
+                break;
+            default:
+                System.out.println("Incorrect input");
+                break;
         }
 
     }
