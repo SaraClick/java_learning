@@ -30,6 +30,9 @@ public class Runner {
 //        variableNames are camelCase
 //        ClassNames are PascalCase
 
+        int x = 3, y = 5;
+        System.out.println(x+y);
+
 
     }
 }

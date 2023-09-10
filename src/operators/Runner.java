@@ -5,6 +5,7 @@ public class Runner {
 
         /*OPERATORS
         = assignment, assigns a value to a variable
+        == is a quality (to check if equal to another thing)
         + addition
         - subtraction
         * multiplies
