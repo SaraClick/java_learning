@@ -9,5 +9,22 @@ public class RunnerDog {
         rex.setBreed("Labrador");
 
         System.out.println(rex.getInfo());
+
+        Dog max = new Dog("Max", "Chihuahua", 2);
+        Dog kuki = new Dog("Kuki");
+
+        System.out.println(max.getInfo());
+        System.out.println(kuki.getInfo());
+        System.out.println(Dog.animalType);
+
+        Dog.setAnimalType("Doggos!");
+        System.out.println(rex.getInfo());
+        System.out.println(max.getInfo());
+        System.out.println(kuki.getInfo());
+        System.out.println(Dog.animalType);
+        Dog.setAnimalType("Canine!");
+        System.out.println(Dog.getAnimalType());
+
+
     }
 }

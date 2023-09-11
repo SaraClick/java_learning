@@ -10,11 +10,37 @@ public class Dog {
         return name;
     }
 
+    // Static instance variable
+    public static String animalType = "Canine";
+
+
+    // ***CONSTRUCTOR***
+    public Dog() {};
+
+    public Dog(String name) {
+        this.name = name;
+    }
+    public Dog(String name, String breed, int age) {
+        this.name =  name;
+        this.breed = breed;
+        this.age  = age;
+    }
+
+    // ***METHODS***
+    // Static setter for the static instance variable
+    public static void setAnimalType(String animalType) {
+        Dog.animalType = animalType;
+    }
+
+    // Static getter for the static instance variable
+    public static String getAnimalType() {
+        return Dog.animalType;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
-
-
+    
     public String getBreed() {
         return breed;
     }
