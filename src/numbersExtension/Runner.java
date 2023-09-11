@@ -1,7 +1,5 @@
 package numbersExtension;
 
-import java.lang.reflect.Array;
-
 public class Runner {
 
     // OPTION 1
@@ -31,33 +29,31 @@ public class Runner {
     }
 
     public static String numToString(int num) {
-        if (num >= 1 && num <= 99) {
+        // System.out.println("num: " + num);
+        
+        // We accept zero in the if statement so we can assess numbers ending in a round dec (20/30/40...)
+        if (num >= 0 && num <= 9999) {
             String result = "";
-            int dec = num / 10;
-            int unit = num % 10;
 
-            String[] units = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-            String[] decens = {"teen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+            String[] units = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+            String[] teens = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "nineteen"};
+            String[] tens = {"", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
-            if (num == 10) {
-                return "ten";
-            } else if (num == 11) {
-                return "eleven";
-            } else if (num == 12) {
-                return "twelve";
+            if (num >= 1000) {
+                result += units[(num / 1000)] + " thousand " + numToString(num % 1000);
+            } else if (num >= 100){
+                result += units[(num / 100)] + " hundred " + numToString(num % 100);
+            } else if (num >= 20) {
+                result += tens[(num / 10) - 1] + " " + numToString((num % 10));
+            } else if (num >= 11) {
+                result += teens[(num / 10) -1];
             } else {
-                if (num <= 9) {
-                    return units[unit - 1];
-                } else {
-                    if (unit == 0) {
-                        return decens[dec - 1];
-                    } else {
-                        return decens[dec - 1] + "-" + units[unit - 1];
-                    }
-                }
+                result += units[num];
             }
+
+            return result;
         }
-        return "Invalid input";
+    return "Invalid input";
     }
 
     public static void main(String[] args) {
@@ -71,10 +67,12 @@ public class Runner {
 //        System.out.println(addNumbers2(81));
 
         System.out.println(numToString(25));
-        System.out.println(numToString(11));
+        System.out.println(numToString(111));
         System.out.println(numToString(6));
         System.out.println(numToString(200));
         System.out.println(numToString(30));
+        System.out.println(numToString(3076));
+        System.out.println(numToString(9999));
 
     }
 }
