@@ -13,6 +13,11 @@ public class Person {
 
     private String hairColour;
 
+    public Person(String name, int age, String job, String hairColour) {
+    }
+
+    public Person(){};
+
     public String introduction() {
         return "Hello, my name is " + name + " and I am a " + age + " years old " + job + " with " + hairColour + " hair";
     }

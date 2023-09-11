@@ -40,7 +40,7 @@ public class Dog {
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getBreed() {
         return breed;
     }
@@ -57,7 +57,7 @@ public class Dog {
         this.age = age;
     }
 
-    public String getInfo(){
+    public String toString() {
         return "My name is " + this.name + ", I am a " + this.breed + " and I'm " + this.age + " years old.";
     }
 
