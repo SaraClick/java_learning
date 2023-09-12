@@ -1,4 +1,4 @@
-package oop;
+package oop.intro;
 
 public class Person {
 

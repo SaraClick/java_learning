@@ -1,6 +1,4 @@
-package oop;
-
-import java.util.Scanner;
+package oop.intro;
 
 public class Runner {
 

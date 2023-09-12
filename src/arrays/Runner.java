@@ -1,6 +1,6 @@
 package arrays;
 
-import oop.Person;
+import oop.intro.Person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,12 @@ import java.util.List;
 public class Runner {
 
     public static void main(String[] args) {
-//        String[] names = new String[10];
+        // ****ARRAYS****
+        // String[] names = new String[10];  // creates a string of 10 null items
         String[] names = {"Jordan", "Cameron", null, "Aswene"};
         System.out.println(names.length);
+
+        // for loop through all elements of the array - loop forward
         for (int i = 0; i < names.length; i++) {
             System.out.println("I: " + i + " Name: " + names[i]);
         }
@@ -19,6 +22,7 @@ public class Runner {
             System.out.println("I: " + i + " Name: " + names[i]);
         }
 
+        // sets the value of the element at index 2 to "Barry".
         names[2] = "Barry";
 
         //  enhanced for-loop, basically just a shortcut for that first loop
@@ -28,6 +32,8 @@ public class Runner {
 
         int[] intArray;
         Integer[] integerArray;
+
+        // ****LISTS****
         // Lists can only work with classes
         List<Integer> nums = new ArrayList<>();
         System.out.println(nums.size());
@@ -40,7 +46,7 @@ public class Runner {
 
         System.out.println(nums);
 
-        List<String> nameList = List.of("Jordan", "Aswene", "Cameron", "Morgan");
+        List<String> nameList = List.of("Jordan", "Aswene", "Cameron", "Morgan");  // list literal
 
 //        List<String> nameList = new ArrayList<>(List.of("Jordan", "Aswene", "Cameron", "Morgan"));
 
