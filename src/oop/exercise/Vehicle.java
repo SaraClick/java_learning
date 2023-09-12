@@ -1,6 +1,6 @@
 package oop.exercise;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private String brand;
     private String owner;
@@ -16,6 +16,8 @@ public class Vehicle {
     };// Default constructor
 
 
+    // abstract class to calculate garage bill
+    public abstract double calcBill();
 
 
     // Getters and Setters

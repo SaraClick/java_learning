@@ -17,6 +17,11 @@ public class Car extends Vehicle{
         return seats;
     }
 
+    @Override
+    public double calcBill() {
+        return 65;
+    }
+
     public void setSeats(int seats) {
         this.seats = seats;
     }

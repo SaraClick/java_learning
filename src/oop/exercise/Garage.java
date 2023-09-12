@@ -44,15 +44,10 @@ public class Garage {
     }
 
 
-    public double getBill(Vehicle v, int hours) {
-        // check the type of the object and calculate the bill based on the number of hours spent
-        if (v instanceof Car) {
-            return hours * 52.5;
-        } else if (v instanceof Plane) {
-            return hours * 350.5;
-        } else {
-            return hours * 250;
-        }
+    public double getBill(Vehicle v, double hours) {
+        // check the type of the object and calculate the bill based on the number of hours spe
+
+        return hours*v.calcBill();
     }
 
     public void emptyGarage() {

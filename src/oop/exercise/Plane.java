@@ -19,6 +19,11 @@ public class Plane extends Vehicle {
         return commercial;
     }
 
+    @Override
+    public double calcBill() {
+        return 895.5;
+    }
+
     public void setCommercial(boolean commercial) {
         this.commercial = commercial;
     }

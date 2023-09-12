@@ -17,6 +17,11 @@ public class Boat extends Vehicle {
         return hasSail;
     }
 
+    @Override
+    public double calcBill() {
+        return 350;
+    }
+
     public void setHasSail(boolean hasSail) {
         this.hasSail = hasSail;
     }
