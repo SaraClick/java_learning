@@ -14,26 +14,24 @@ public class Runner {
         Vehicle c3 = new Car("citroen", "Mike", 4);
         Vehicle focus = new Car("ford", "Daisy", 5);
         Vehicle clio = new Car("renault", "James", 4);
-        Vehicle sailingBoatV = sailingBoat;
-        Vehicle boeingV = boeing;
-        
+
         garageSara.addVehicles(focus);
         garageSara.addVehicles(clio);
-        garageSara.addVehicles(sailingBoatV);
-        garageSara.addVehicles(boeingV);
+        garageSara.addVehicles(c3);
+        garageSara.addVehicles(sailingBoat);
+        garageSara.addVehicles(boeing);
 
-        Vehicle twingo1 = twingo;
-        garageSara.addVehicles(twingo1);
+        garageSara.addVehicles(twingo);
         garageSara.printGarage();
-        garageSara.removeVehicleById(3);
-        System.out.println("Printing garage after removing vehicle with id 3");
+        garageSara.removeVehicleById(2);
+        System.out.println("Printing garage after removing vehicle with id 2");
         garageSara.printGarage();
 
-        System.out.println(twingo1.getClass());
+        System.out.println(twingo.getClass().getSimpleName());
 
         System.out.println(garageSara.getBill(focus, 6));
-        System.out.println(garageSara.getBill(boeingV, 6));
-        System.out.println(garageSara.getBill(sailingBoatV, 6));
+        System.out.println(garageSara.getBill(boeing, 6));
+        System.out.println(garageSara.getBill(sailingBoat, 6));
 
         garageSara.removeVehicleByType("Car");
         garageSara.printGarage();
