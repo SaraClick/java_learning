@@ -1,6 +1,6 @@
 package oop.further;
 
-public class Animal extends Object{
+public abstract class Animal extends Object{
 
     private String name;
     private int age;
@@ -22,6 +22,11 @@ public class Animal extends Object{
         this.noOfLegs = noOfLegs;
     }
 
+    public abstract void speak();
+
+    public abstract double calcBill();
+
+    @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +

@@ -1,6 +1,6 @@
 package oop.further;
 
-public class Mammal extends Animal {
+public abstract class Mammal extends Animal {
 
     public Mammal() {
         super();
