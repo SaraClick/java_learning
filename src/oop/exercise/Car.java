@@ -8,8 +8,8 @@ public class Car extends Vehicle{
         super();
     }
 
-    public Car(String environment, int wheels, float speed, int seats) {
-        super(environment, wheels, speed);
+    public Car(String brand, String owner, int seats) {
+        super(brand, owner);
         this.seats = seats;
     }
 
@@ -22,6 +22,6 @@ public class Car extends Vehicle{
     }
 
     public String toString() {
-        return super.toString() + ", seats=" + this.getSeats() + "}";
+        return super.toString() + ", seats=" + this.getSeats();
     }
 }

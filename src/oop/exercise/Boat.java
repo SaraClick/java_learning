@@ -8,8 +8,8 @@ public class Boat extends Vehicle {
         super();
     }
 
-    public Boat(String environment, int wheels, float speed, boolean hasSail) {
-        super(environment, wheels, speed);
+    public Boat(String brand, String owner, boolean hasSail) {
+        super(brand, owner);
         this.hasSail = hasSail;
     }
 
@@ -22,6 +22,6 @@ public class Boat extends Vehicle {
     }
 
     public String toString() {
-        return super.toString() + ", hasSail=" + this.isHasSail() + "}";
+        return super.toString() + ", hasSail=" + this.isHasSail();
     }
 }

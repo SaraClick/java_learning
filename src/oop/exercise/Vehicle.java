@@ -2,16 +2,14 @@ package oop.exercise;
 
 public class Vehicle {
 
-    private String environment;
-    private int wheels;
-    private float speed;
+    private String brand;
+    private String owner;
     private int id;
 
     // Constructor
-    public Vehicle(String environment, int wheels, float speed) {
-        this.environment = environment;
-        this.wheels = wheels;
-        this.speed = speed;
+    public Vehicle(String brand, String owner) {
+        this.brand = brand;
+        this.owner = owner;
     }
 
     public Vehicle() {
@@ -22,28 +20,20 @@ public class Vehicle {
 
     // Getters and Setters
 
-    public String getEnvironment() {
-        return environment;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setEnvironment(String environment) {
-        this.environment = environment;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public int getWheels() {
-        return wheels;
+    public String getOwner() {
+        return owner;
     }
 
-    public void setWheels(int wheels) {
-        this.wheels = wheels;
-    }
-
-    public float getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(float speed) {
-        this.speed = speed;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public int getId() {
@@ -56,10 +46,9 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "environment='" + environment + '\'' +
-                ", wheels=" + wheels +
-                ", seats=" + speed + ", id=" + id +
-                '}';
+        return "Vehicle =>> " +
+                "brand='" + this.getBrand() + '\'' +
+                ", owner=" + this.getOwner() +
+                ", id=" + id;
     }
 }

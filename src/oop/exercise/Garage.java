@@ -34,8 +34,9 @@ public class Garage {
     }
 
     public void printGarage(){
+        System.out.println("*****Garage***** ");
         for (Vehicle v : vehicles) {
-            System.out.println("id: " + v.getId() + " / vehicle: " + v.toString());
+            System.out.println("Vehicle =>> id: " + v.getId() + " / brand: " + v.getBrand() + " / owner: " + v.getOwner());
         }
 
     }

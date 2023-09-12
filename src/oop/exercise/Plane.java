@@ -9,10 +9,11 @@ public class Plane extends Vehicle {
     }
 
 
-    public Plane(String environment, int wheels, float speed, boolean commercial) {
-        super(environment, wheels, speed);
+    public Plane(String brand, String owner, boolean commercial) {
+        super(brand, owner);
         this.commercial = commercial;
     }
+
 
     public boolean isCommercial() {
         return commercial;
@@ -24,6 +25,6 @@ public class Plane extends Vehicle {
 
 
     public String toString() {
-        return super.toString() + ", commercial=" + this.isCommercial() + "}";
+        return super.toString() + ", commercial=" + this.isCommercial();
     }
 }
