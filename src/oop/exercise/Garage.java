@@ -20,32 +20,27 @@ public class Garage {
     }
 
     public void removeVehicleById(int id) {
-        Vehicle vehicleToRemove = null;
         for (Vehicle v : vehicles) {
             if (v.getId() == id) {
-                vehicleToRemove = v;
+                vehicles.remove(v);
+                return;  // we need to stop the loop because we have modified the length of the list by removing an item
             }
         }
-        vehicles.remove(vehicleToRemove);
     }
 
     public void removeVehicleByType(String className) {
-        // Generates a list with all ids of the vehicles to be removed
-        List<Integer> vehiclesToRemove = new ArrayList<>();
+        // Generates a list with all vehicles to be removed
+        List<Vehicle> vehiclesToRemove = new ArrayList<>();
 
         // iterate though the list of vehicles checking if the type is the same as the given parameter
         // focus.getClass() outputs: class oop.exercise.Car
         // focus.getSimpleName() outputs Car
         for (Vehicle v : vehicles) {
             if (v.getClass().getSimpleName().equals(className)) {
-                vehiclesToRemove.add(v.getId());
+                vehiclesToRemove.add(v);
             }
         }
-
-        // We iterate through the ids list vehiclesToRemove and use the method removeVehicleById()
-        for (Integer id : vehiclesToRemove) {
-            removeVehicleById(id);
-        }
+        vehicles.removeAll(vehiclesToRemove);
     }
 
 
@@ -69,7 +64,5 @@ public class Garage {
         for (Vehicle v : vehicles) {
             System.out.println("Vehicle =>> id: " + v.getId() + " / brand: " + v.getBrand() + " / owner: " + v.getOwner());
         }
-
-
     }
 }

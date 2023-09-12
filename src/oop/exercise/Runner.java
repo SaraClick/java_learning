@@ -36,6 +36,5 @@ public class Runner {
         garageSara.removeVehicleByType("Car");
         garageSara.printGarage();
 
-
     }
 }

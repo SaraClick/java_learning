@@ -48,7 +48,7 @@ public class Vehicle {
     public String toString() {
         return "Vehicle =>> " +
                 "brand='" + this.getBrand() + '\'' +
-                ", owner=" + this.getOwner() +
+                ", owner=" + this.getOwner() + '\'' +
                 ", id=" + id;
     }
 
