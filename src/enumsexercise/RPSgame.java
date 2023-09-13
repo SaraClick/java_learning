@@ -7,7 +7,7 @@ import java.util.Random;
 public class RPSgame {
     private Random rand = new Random();
 
-    public String winner(RockPaperScissors play, RockPaperScissors actual) {
+    private String winner(RockPaperScissors play, RockPaperScissors actual) {
         System.out.println("Java => " + actual);
         System.out.println("You => " + play);
         if (play == actual){
