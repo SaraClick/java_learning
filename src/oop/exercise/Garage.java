@@ -22,8 +22,8 @@ public class Garage {
     public void removeVehicleById(int id) {
         for (Vehicle v : vehicles) {
             if (v.getId() == id) {
-                vehicles.remove(v);
-                return;  // we need to stop the loop because we have modified the length of the list by removing an item
+                this.vehicles.remove(v);
+                return; // we need to stop the loop because we have modified the length of the list by removing an item
             }
         }
     }

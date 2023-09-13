@@ -1,5 +1,10 @@
 package oop.exercise;
 
+import oop.further.Bird;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -35,6 +40,15 @@ public class Runner {
 
         garageSara.removeVehicleByType("Car");
         garageSara.printGarage();
+
+        List<Flyable> flyable = new ArrayList<>();
+        flyable.add(new Bird());
+        flyable.add(new Plane());
+        flyable.add(boeing);
+
+        for (Flyable f:flyable) {
+            System.out.println(f.fly());
+        }
 
     }
 }

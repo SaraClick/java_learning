@@ -1,6 +1,8 @@
 package oop.further;
 
-public class Bird extends Animal {
+import oop.exercise.Flyable;
+
+public class Bird extends Animal implements Flyable {
 
     public Bird() {
         super();
@@ -8,6 +10,11 @@ public class Bird extends Animal {
 
     public Bird(String name, int age, float height, float weight, int noOfLegs) {
         super(name, age, height, weight, noOfLegs);
+    }
+
+
+    public String fly(){
+        return "flop flop";
     }
 
     @Override

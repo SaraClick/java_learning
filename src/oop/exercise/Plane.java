@@ -1,6 +1,6 @@
 package oop.exercise;
 
-public class Plane extends Vehicle {
+public class Plane extends Vehicle implements Flyable {
 
     private boolean commercial;
 
@@ -17,6 +17,10 @@ public class Plane extends Vehicle {
 
     public boolean isCommercial() {
         return commercial;
+    }
+
+    public String fly() {
+        return "brrrrrr";
     }
 
     @Override
