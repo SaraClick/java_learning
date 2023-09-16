@@ -1,6 +1,6 @@
 package oop.genericsexercise;
 
-import oop.exercise.Vehicle;
+import oop.exercise_garage.Vehicle;
 
 import java.util.List;
 

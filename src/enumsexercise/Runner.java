@@ -6,11 +6,11 @@ public class Runner {
 
         RPSgame rpsGame = new RPSgame();
 
-        rpsGame.rpsPlay(RockPaperScissors.PAPER);
-        rpsGame.rpsPlay(RockPaperScissors.SCISSORS);
-        rpsGame.rpsPlay(RockPaperScissors.ROCK);
-        rpsGame.rpsPlay(RockPaperScissors.PAPER);
-        rpsGame.rpsPlay(RockPaperScissors.ROCK);
-        rpsGame.rpsPlay(RockPaperScissors.SCISSORS);
+        rpsGame.rpsPlay(RPSeum.PAPER);
+        rpsGame.rpsPlay(RPSeum.SCISSORS);
+        rpsGame.rpsPlay(RPSeum.ROCK);
+        rpsGame.rpsPlay(RPSeum.PAPER);
+        rpsGame.rpsPlay(RPSeum.ROCK);
+        rpsGame.rpsPlay(RPSeum.SCISSORS);
         }
     }

@@ -1,8 +1,7 @@
 package oop.genericsexercise;
 
-import oop.exercise.Car;
-import oop.exercise.Plane;
-import oop.exercise.Vehicle;
+import oop.exercise_garage.Car;
+import oop.exercise_garage.Plane;
 
 public class Runner {
     public static void main(String[] args) {

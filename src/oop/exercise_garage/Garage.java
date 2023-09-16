@@ -1,4 +1,4 @@
-package oop.exercise;
+package oop.exercise_garage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +19,23 @@ public class Garage {
         vehicles.add(v);
     }
 
-    public void removeVehicleById(int id) {
+    public Vehicle findById(int id) {
         for (Vehicle v : vehicles) {
             if (v.getId() == id) {
-                this.vehicles.remove(v);
-                return; // we need to stop the loop because we have modified the length of the list by removing an item
+                return v;
+            } }
+        throw new VehicleNotFoundException("Vehicle not fund for id " + id);
+        }
+
+    public boolean removeVehicleById(int id) {
+        for (Vehicle v : vehicles) {
+            if (v.getId() == id) {
+//                v_remove = v;
+                return this.vehicles.remove(v);
+
             }
         }
+        throw new VehicleNotFoundException("Vehicle not fund for id " + id);
     }
 
     public void removeVehicleByType(String className) {
@@ -45,7 +55,7 @@ public class Garage {
 
 
     public double getBill(Vehicle v, double hours) {
-        // check the type of the object and calculate the bill based on the number of hours spe
+        // check the type of the object and calculate the bill based on the number of hours spent
 
         return hours*v.calcBill();
     }

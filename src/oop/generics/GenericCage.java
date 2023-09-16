@@ -1,6 +1,6 @@
 package oop.generics;
 
-import oop.further.Animal;
+import oop.further_animals.Animal;
 
 // Generics create a placeholder that you can use instead of the actual type
 // This lets the user set the type when they instantiate the class

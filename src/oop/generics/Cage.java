@@ -1,6 +1,6 @@
 package oop.generics;
 
-import oop.further.Animal;
+import oop.further_animals.Animal;
 
 // store any animal
 public class Cage {

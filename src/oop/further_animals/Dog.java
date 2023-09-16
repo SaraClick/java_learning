@@ -1,4 +1,4 @@
-package oop.further;
+package oop.further_animals;
 
 public class Dog extends Animal {
 

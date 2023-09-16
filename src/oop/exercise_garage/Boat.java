@@ -1,4 +1,4 @@
-package oop.exercise;
+package oop.exercise_garage;
 
 public class Boat extends Vehicle {
 

@@ -1,9 +1,10 @@
-package oop.exercise;
+package oop.exercise_garage;
 
-import oop.further.Bird;
+import oop.further_animals.Bird;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Runner {
 
@@ -49,6 +50,23 @@ public class Runner {
         for (Flyable f:flyable) {
             System.out.println(f.fly());
         }
+
+        System.out.println("\n****EXCEPTIONS****");
+        try {
+            Vehicle v_id4 = garageSara.findById(4);
+            System.out.println(v_id4.getBrand());
+            Vehicle v_id1 = garageSara.findById(1);
+            System.out.println(v_id1.getBrand());
+//            garageSara.removeVehicleById(4);
+//            garageSara.printGarage();
+//            garageSara.removeVehicleById(2);
+//            garageSara.printGarage();
+        } catch (VehicleNotFoundException vnfe) {
+            // .getMessage() is from parent class and will return the message string
+            System.out.println(vnfe.getMessage());
+        }
+
+        Scanner scan = new Scanner(System.in);
 
     }
 }

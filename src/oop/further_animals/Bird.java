@@ -1,6 +1,6 @@
-package oop.further;
+package oop.further_animals;
 
-import oop.exercise.Flyable;
+import oop.exercise_garage.Flyable;
 
 public class Bird extends Animal implements Flyable {
 

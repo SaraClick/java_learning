@@ -1,8 +1,8 @@
 package oop.generics;
 
-import oop.further.Animal;
-import oop.further.Cat;
-import oop.further.Dog;
+import oop.further_animals.Animal;
+import oop.further_animals.Cat;
+import oop.further_animals.Dog;
 
 import java.util.ArrayList;
 import java.util.List;
