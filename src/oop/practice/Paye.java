@@ -1,8 +1,8 @@
 package oop.practice;
 
-import java.time.LocalDate;
+import oop.practice.Employee;
 
-public class Paye extends Employee{
+public class Paye extends Employee {
     private String dept;
     private double salaryGross;
 

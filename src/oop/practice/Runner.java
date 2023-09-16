@@ -1,5 +1,7 @@
 package oop.practice;
 
+import oop.practice.Paye;
+
 public class Runner {
 
     public static void main(String[] args) {
